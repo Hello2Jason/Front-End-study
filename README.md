@@ -1,2 +1,2 @@
 #README.md
-Oh yeah!
+Some code while I'm learning about Front-End.
