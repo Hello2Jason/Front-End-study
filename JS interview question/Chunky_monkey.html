@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chunk monkey</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function chunkArr(arr, num) {
+            var newArr = [];
+            for (var i = 0; i < Math.ceil(arr.length / num); i++) {
+                newArr.push(arr.slice(i*num,i*num+num));
+            }
+            return newArr;
+        }
+        console.log(chunkArr([1,2,3,4,5], 3));
+    </script>
+</body>
+</html>

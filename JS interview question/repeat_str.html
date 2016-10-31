@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>repeat string</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function repeatStr(str, num) {
+            if (num < 0) {
+                return "";
+            }
+            var result = "";
+            for (var i = 0; i < num; i++) {
+                result += str;
+            }
+            return result;
+        }
+        console.log(repeatStr("hello", 3));
+    </script>
+</body>
+</html>

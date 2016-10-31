@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>factorilize</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 递归方法
+        function factorilize(num) {
+            if (num <= 1) {
+                return 1;
+            }
+            else {
+                return num * arguments.callee(num - 1);
+            }
+            
+        }
+        console.log(factorilize(5));
+
+        // 非递归方法
+        function factoriliza2(num) {
+            if (num <= 0) {
+                return 1;
+            }
+            var sum = 1;
+            for (var i = 2; i < num + 1; i++) {
+                sum *=i;
+            }
+            return sum;
+        }
+        console.log(factoriliza2(5));
+    </script>
+</body>
+</html>

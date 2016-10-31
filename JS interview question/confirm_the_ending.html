@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>confirm the ending</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function confirmEnd(str, target) {
+            var sLen = str.length;
+            var tLen = target.length;
+            if (str.indexOf(target) + tLen === sLen) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        var string = "Hello world";
+        console.log(confirmEnd(string, "ld"));
+    </script>
+</body>
+</html>

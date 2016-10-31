@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>largest num in arr</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function largestNum(arr) {
+            var newArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                newArr.push(Math.max.apply(null, arr[i]));
+            }
+            return newArr;
+        }
+        var array = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
+        console.log(largestNum(array));
+    </script>
+</body>
+</html>

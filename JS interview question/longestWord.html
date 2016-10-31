@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>longest word</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function longestWord(str) {
+            str = str.split(" ");
+            var arr = [];
+            for (var i = 0; i < str.length; i++) {
+                arr.push(str[i].length);
+            }
+            return Math.max.apply(null, arr);
+        }
+        var string = "Hello wonderful world beautifully";
+        console.log(longestWord(string));
+    </script>
+</body>
+</html>

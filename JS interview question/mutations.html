@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mutations</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mutation(arr) {
+            var newArr = [arr[0].toLowerCase(), arr[1].toLowerCase()];
+            for (var i = 0; i < newArr[1].length; i++) {
+               if (newArr[0].indexOf(newArr[1][i]) === -1) {
+                    return false;
+               } 
+            }
+            return true;
+        }
+        console.log(mutation(["helloo", "Helloey"]));
+    </script>
+</body>
+</html>
